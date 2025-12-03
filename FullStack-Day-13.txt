@@ -1,0 +1,62 @@
+Day 13:
+============
+
+Formal Parameters vs Actual Parameters
+
+Formal Parameters
+=======================
+These are the variable names defined inside the function definition.
+They act as placeholders for values.
+
+Example:
+def add(a, b):   # a, b → formal parameters
+    return a + b
+
+Actual Parameters
+=========================
+These are the real values passed to the function when calling it.
+
+Example:
+add(10, 20)   # 10, 20 → actual parameters
+
+Types of actual parameters:
+Positional → add(10, 20)
+Keyword → add(a=10, b=20)
+Default → def greet(name="User")
+Variable length → *args, **kwargs
+
+
+2) Types of Functions
+
+Python provides multiple types of user-defined functions:
+a) Based on Arguments
+==========================
+No-argument function
+
+def hello():
+    print("Hello!")
+
+Function with arguments
+
+def add(a, b):
+    return a + b
+
+b) Based on Return Value
+==============================
+Without return
+
+def show():
+    print("Hi")
+
+With return
+
+def square(n):
+    return n*n
+
+
+c) Lambda (Anonymous) Functions
+======================================
+Small, single-expression functions.
+
+cube = lambda x: x**3
+print(cube(3))  # 27
